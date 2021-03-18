@@ -15,7 +15,7 @@ namespace Sifrovani
             char[] charArr = new char[text.Length];
             char[] decharArr = new char[text.Length];
 
-            string rndText = "Nahodnytext";
+            string rndText = "nahodnytext";
             char[] originalTextArray = new char[rndText.Length];
             char[] decodedOriginalTextArray = new char[rndText.Length];
             int move = 7;
@@ -43,10 +43,7 @@ namespace Sifrovani
                 {
                     reset -= 26;
                 }
-                if(reset < 97)
-                {
-                    reset += 26;
-                }
+
                 originalTextArray[i] = (char)(reset);
             }
             // Caesarova sifra - odsifrovani
